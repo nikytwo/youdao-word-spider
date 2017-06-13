@@ -16,4 +16,5 @@ class WordItem(scrapy.Item):
     phonetic = scrapy.Field()
     desc = scrapy.Field()
     tags = scrapy.Field()
+    date = scrapy.Field()
     

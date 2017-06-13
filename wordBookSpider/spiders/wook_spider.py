@@ -28,9 +28,10 @@ class WordSpider(scrapy.Spider):
             word['phonetic'] = tr.xpath('td[3]/div/text()').extract_first()
             word['desc'] = tr.xpath('td[4]/div/text()').extract_first()
             word['tags'] = tr.xpath('td[6]/div/text()').extract_first()
+            word['date'] = tr.xpath('td[5]/text()').extract_first()
             yield word
 
         links = response.css('.next-page')
         url = 'http://dict.youdao.com/wordbook/%s' % links[0].xpath('@href').extract_first()
         print url
-        yield scrapy.Request(url, self.parse)
+        # yield scrapy.Request(url, self.parse)

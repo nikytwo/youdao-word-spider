@@ -9,7 +9,7 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-FEED_URI = 'file:///D:/Test/word.json'
+FEED_URI = 'file:///D:/Test/python/wordBookSpider/word.json'
 FEED_FORMAT = 'jsonlines'
 FEED_EXPORT_ENCODING = 'utf-8'
 # FEED_EXPORT_FIELDS = ['word', 'phonetic', 'desc', 'tags']
