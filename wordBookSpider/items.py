@@ -17,4 +17,15 @@ class WordItem(scrapy.Item):
     desc = scrapy.Field()
     tags = scrapy.Field()
     date = scrapy.Field()
-    
+
+
+class PhraseItem(scrapy.Item):
+    word = scrapy.Field()
+    phrase = scrapy.Field()
+    desc = scrapy.Field()
+
+
+class SentenceItem(scrapy.Item):
+    word = scrapy.Field()
+    sentence = scrapy.Field()
+    desc = scrapy.Field()
